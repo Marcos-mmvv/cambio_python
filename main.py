@@ -1,6 +1,16 @@
 from forex_python.converter import CurrencyRates
 
-print(f'{'-'*30} CONVERSOR DE MOEDA EM TEMPO REAL {'-'*30}\n')
+# importa função de data
+from datetime import date
+
+# função exibir o menu
+dia = date.today().day
+mes = date.today().month
+ano = date.today().year
+
+print(f'{'-'*30} |CONVERSOR DE MOEDA EM TEMPO REAL| {'-'*30}')
+print(f'\n{'=' * 40} {dia}/{mes}/{ano} {'=' * 45}\n')
+
 
 valor = str(input('Informe o valor da moeda a ser convertida: '))
 valor = float(valor.replace(',', '.'))
